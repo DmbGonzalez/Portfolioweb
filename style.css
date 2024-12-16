@@ -1,0 +1,110 @@
+@media screen and (max-width:1920px){
+}
+    
+    
+
+@media screen and (min-width:758px){
+    
+}
+*{
+    padding:0;
+    box-sizing: border-box;
+    align-items: flex-end;
+}
+
+body{
+    
+background-color: black;
+color:aliceblue;
+width:95vw;
+margin: 0;
+padding:0;
+font-family: Arial, sans-serif;
+font-size: 15px;
+}
+
+header{
+    flex-direction: column;
+    font-size: 15px;
+    display:flex;
+    justify-content:space-between;
+    min-height: 70px;
+    background-color: rgb(0, 0, 0);
+
+   padding: 0 100px;
+   
+}
+
+nav{
+    font-weight: 200px;
+    padding-right: 10px;
+    align-items: flex-end;    
+}
+nav a:hover{
+    color:rgb(117, 194, 245);
+}
+
+
+
+.banner{
+    .banner {
+        background-image: url('https://static.vecteezy.com/system/resources/previews/021/398/059/original/kawaii-bear-design-free-vector.jpg');
+        width: 80%; /* Ajusta el ancho del banner para que se vea el dibujo */
+        height: 70vh; /* Ajuste de altura */
+        margin-top: -70px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; /* Centra el dibujo */
+    }
+}
+
+h1, h2, p{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+
+.proj{
+width: 100px;
+height:100px;
+
+}
+
+
+
+
+.cards:hover{
+    background-color: rgba(14, 65, 143, 0.466);
+}
+.cards{
+    border: 2px solid rgb(58, 57, 57);
+    width: fit-content;
+    padding: 1em 1em 2em 1em;
+    transition:1s;
+    display:flex;
+    flex-direction:column;
+    gap:1.5em;
+    align-items:center;
+    margin:auto;
+    
+}
+
+#cards-container{
+    background-color: rgb(0, 0, 0);
+    width: 95vw;
+    margin: auto;
+    border: 2px solid rgb(58, 57, 57);
+    padding: 0.5em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+
