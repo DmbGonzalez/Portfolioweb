@@ -44,7 +44,18 @@ nav a:hover{
     color:rgb(117, 194, 245);
 }
 
+.container { 
+    width: 100%; 
+    height: 300px; 
+    overflow: hidden; 
+} 
 
+
+.container img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+} 
 
 .banner{
     .banner {
@@ -67,44 +78,38 @@ a{
     text-decoration:none;
     color:inherit;
 }
-
-
 .proj{
-width: 100px;
-height:100px;
-
-}
-
-
-
-
-.cards:hover{
-    background-color: rgba(14, 65, 143, 0.466);
-}
-.cards{
-    border: 2px solid rgb(58, 57, 57);
-    width: fit-content;
-    padding: 1em 1em 2em 1em;
-    transition:1s;
-    display:flex;
-    flex-direction:column;
-    gap:1.5em;
-    align-items:center;
-    margin:auto;
+    width: 100px;
+    height:100px;
     
-}
+    }
+    
+    
+    
+    
+    .cards:hover{
+        background-color: rgba(14, 65, 143, 0.466);
+    }
+    .cards{
+        border: 2px solid rgb(58, 57, 57);
+        width: fit-content;
+        padding: 1em 1em 2em 1em;
+        transition:1s;
+        display:flex;
+        flex-direction:column;
+        gap:1.5em;
+        align-items:center;
+        margin:auto;
+    }
 
-#cards-container{
-    background-color: rgb(0, 0, 0);
-    width: 95vw;
-    margin: auto;
-    border: 2px solid rgb(58, 57, 57);
-    padding: 0.5em;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-
-
+    #cards-container{
+        background-color: rgb(0, 0, 0);
+        width: 95vw;
+        margin: auto;
+        border: 2px solid rgb(58, 57, 57);
+        padding: 0.5em;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }    
 
