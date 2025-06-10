@@ -1,115 +1,165 @@
-@media screen and (max-width:1920px){
-}
-    
-    
-
-@media screen and (min-width:758px){
-    
-}
-*{
-    padding:0;
-    box-sizing: border-box;
-    align-items: flex-end;
+/* ----------------- Reset y base ----------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    
-background-color: black;
-color:aliceblue;
-width:95vw;
-margin: 0;
-padding:0;
-font-family: Arial, sans-serif;
-font-size: 15px;
+
+  body.bg-violeta-oscuro {
+  background-color: #05000a; /* violeta oscuro */
+  
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-header{
-    flex-direction: column;
-    font-size: 15px;
-    display:flex;
-    justify-content:space-between;
-    min-height: 70px;
-    background-color: rgb(0, 0, 0);
+/* ----------------- Navegación ----------------- */
+header.bg-violeta-transparente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
 
-   padding: 0 100px;
-   
+  background-color: rgba(6, 3, 73, 0.712);
+  color: white; /* para que el texto contraste */
 }
+
 
 nav{
-    font-weight: 200px;
-    padding-right: 10px;
-    align-items: flex-end;    
-}
-nav a:hover{
-    color:rgb(117, 194, 245);
-}
 
-.container { 
-    width: 100%; 
-    height: 300px; 
-    overflow: hidden; 
-} 
-
-
-.container img { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-} 
-
-.banner{
-    .banner {
-        background-image: url('https://static.vecteezy.com/system/resources/previews/021/398/059/original/kawaii-bear-design-free-vector.jpg');
-        width: 80%; /* Ajusta el ancho del banner para que se vea el dibujo */
-        height: 70vh; /* Ajuste de altura */
-        margin-top: -70px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center; /* Centra el dibujo */
-    }
+  color: white; /* para que el texto contraste */
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
-h1, h2, p{
-    margin:0;
-    padding:0;
+nav a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+nav a:hover {
+  color: rgb(117, 194, 245);
 }
-.proj{
-    width: 100px;
-    height:100px;
-    
-    }
-    
-    
-    
-    
-    .cards:hover{
-        background-color: rgba(14, 65, 143, 0.466);
-    }
-    .cards{
-        border: 2px solid rgb(58, 57, 57);
-        width: fit-content;
-        padding: 1em 1em 2em 1em;
-        transition:1s;
-        display:flex;
-        flex-direction:column;
-        gap:1.5em;
-        align-items:center;
-        margin:auto;
-    }
 
-    #cards-container{
-        background-color: rgb(0, 0, 0);
-        width: 95vw;
-        margin: auto;
-        border: 2px solid rgb(58, 57, 57);
-        padding: 0.5em;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }    
+/* ----------------- Banner ----------------- */
+.container {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
 
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ----------------- Cards generales ----------------- */
+.cards {
+  border: 2px solid #3a3a3a;
+  padding: 1em;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: fit-content;
+  transition: background-color 0.5s ease;
+}
+
+.cards:hover {
+  background-color: rgba(14, 65, 143, 0.466);
+}
+
+/* ----------------- Proyectos ----------------- */
+.proj {
+  width: 100px;
+  height: 100px;
+}
+
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  padding: 1rem;
+  border: 2px solid #3a3a3a;
+  margin: auto;
+  background-color: #949191;
+  width: 95vw;
+}
+
+/* ----------------- Formularios ----------------- */
+.formulario input,
+.formulario button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-control {
+  background-color: #070113;
+  color: white;
+  border: 1px solid #888;
+}
+
+.form-label {
+  color: white;
+}
+
+/* ----------------- Tipografía ----------------- */
+h1,
+h2,
+h3,
+p {
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+/* ----------------- Banner personalizado ----------------- */
+.banner {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/021/398/059/original/kawaii-bear-design-free-vector.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  height: 70vh;
+  margin: 0 auto;
+}
+
+/* ----------------- Footer ----------------- */
+footer.bg-violeta { 
+  background-color: rgba(6, 3, 73, 0.712);/* azul intermedio con 70% de opacidad */
+  color: white; /* para que el texto contraste */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* ----------------- Responsive ----------------- */
+@media screen and (max-width: 758px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .cards {
+    width: 90%;
+  }
+
+  .formulario input,
+  .formulario button {
+    width: 90%;
+  }
+}
